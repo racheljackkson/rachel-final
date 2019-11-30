@@ -7,7 +7,7 @@
 <div class="container">
   <div class="row">
     <div class="col">
-    <h1 style="text-align:center">A little about Queen...</h1>
+    <h1 class="google-dont" style="text-align:center">A little about Queen...</h1>
     </div>
   </div>
 
@@ -23,7 +23,7 @@
         <img class="card-img-top" src="img/members/{{ members.image }}" alt="Band Member Photo">
       <div class="card-body">
         <h5 class="card-title"> {{ members.name }} </h5>
-        <a href="freddie-mercury.html" class="btn btn-dark">Learn More</a>
+        <a href="{{ members.slug }}.html" class="btn btn-dark">Learn More</a>
       </div>
     </div>
   </div>

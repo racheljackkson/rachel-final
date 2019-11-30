@@ -2,12 +2,14 @@
 {% block page_title %}Albums{% endblock %}
 {% block content %}
 
-<div class="row">
-  {% for discs in data.discography %}
-  <div class="col-sm-4 col-lg-2">
-    <img class="img-fluid" src="img/discs/{{ discs.image }}" alt="Album Image">
-    <p class="album-title ablum-year text-center">{{ discs.title }} - {{ discs.year }}</p>
+<div class="container">
+  <div class="row">
+    {% for discs in data.discography %}
+    <div class="col-sm-4 col-lg-2">
+      <img class="img-fluid" src="img/discs/{{ discs.image }}" alt="Album Image">
+      <p class="album-title ablum-year text-center"><strong>{{ discs.title }}</strong><br> {{ discs.year }}</p>
+    </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 </div>
 {% endblock %}
