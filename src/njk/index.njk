@@ -7,27 +7,26 @@
 <div class="container">
   <div class="row">
     <div class="col">
-    <h1 class="google-dont" style="text-align:center">A little about Queen...</h1>
+    <h1 class="google-font" style="text-align:center">A little about Queen...</h1>
     </div>
   </div>
-
   <div class="row">
     <div class="col">
       <p style="text-align:center">Queen was a British rock band that formed in London in 1970. It was one of the most commercially successful music acts of all time. The band members were Freddie Mercury (lead vocals, piano), Brian May (guitar, vocals), Roger Taylor (drums, vocals), and John Deacon (bass guitar). - Source: <a href="https://en.wikipedia.org/wiki/Queen_(band)" target="_blank">Wikipedia</a></p>
     </div>
   </div>
   <div class="row">
-  {% for members in data.members %}
+    {% for members in data.members %}
     <div class="col-sm-6">
       <div class="card">
         <img class="card-img-top" src="img/members/{{ members.image }}" alt="Band Member Photo">
       <div class="card-body">
-        <h5 class="card-title"> {{ members.name }} </h5>
-        <a href="{{ members.slug }}.html" class="btn btn-dark">Learn More</a>
+        <h1 class="card-title" style="text-align:center"> {{ members.name }} </h1>
+        <a href="{{ members.slug }}.html" class="btn btn-dark btn-block">Learn More</a>
       </div>
     </div>
   </div>
-  {% endfor %}
+    {% endfor %}
     <br>
     <iframe title="Queen's Billboard Hits" aria-label="Bar Chart" id="datawrapper-chart-gA1oy" src="//datawrapper.dwcdn.net/gA1oy/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="678"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
 </div>
