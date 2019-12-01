@@ -5,10 +5,14 @@
   -o-background-size: cover;
   background-size: cover;
   background-position: 0 0 50% 0; */
-  color: black;
 }
 
 .jumbotron {
   margin-bottom: 0px;
   margin-top: 0px;
+  background-color: none;
+}
+
+.carousel {
+  background-color: none;
 }
