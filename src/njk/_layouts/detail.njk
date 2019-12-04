@@ -6,14 +6,14 @@
   <div class="row">
     <div class="col-sm-4 left-content">
       <img src="img/members/{{ members.imagebw }}" alt="band member" class="img-fluid">
-      <h2><strong>{{ members.name }}</strong></h2>
+      <h1 style="padding-top: 5px; width: auto"><strong>{{ members.name }}</strong></h1>
       <ul class="members info">
         <li class="members info"><i>{{ members.instruments }}</li>
         <li class="members info">{{ members.tenure }}</li>
         <li class="members info">{{ members.birthplace }}</li>
         <li class="members info">{{ members.birthdate }}</i></li>
     </div>
-    <div class="col-sm-8">
+    <div class="col-sm-8" style="border-left: 2px solid purple;">
      <p class="members text"> {{ members.text | safe }}</p>
     </div>
   </div>
