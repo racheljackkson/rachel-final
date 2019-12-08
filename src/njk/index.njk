@@ -7,12 +7,14 @@
 <div class="container">
   <div class="row">
     {% for members in data.members %}
-    <div class="col-sm-3 col-md-3" style="margin-top: 50px; margin-bottom: 50px">
-      <div class="card">
-        <img class="card-img-top" src="img/members/{{ members.image }}" alt="Band Member Photo">
-        <div class="card-body">
-          <h1 class="card-title" style="text-align:center"> {{ members.name }} </h1>
-          <a href="{{ members.slug }}.html" class="btn btn-dark btn-block">Learn More</a>
+    <div class="col-sm-12 col-md-6 col-lg-3" style="margin-top: 50px; margin-bottom: 50px">
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" src="img/members/{{ members.image }}" alt="Band Member Photo">
+          <div class="card-body">
+            <h1 class="card-title" style="text-align:center"> {{ members.name }} </h1>
+            <a href="{{ members.slug }}.html" class="btn btn-dark btn-block">Learn More</a>
+         </div>
         </div>
       </div>
     </div>

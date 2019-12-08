@@ -11,8 +11,15 @@ a {
 
 h1 {
   font-family: 'Cinzel', serif;
-  font-size: 60px;
+  font-size: 2vw;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /* bootstrap */
 // Option A: Include all of Bootstrap
